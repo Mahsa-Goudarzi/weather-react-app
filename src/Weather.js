@@ -1,26 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Forecast from "./Forecast";
 import Today from "./Today";
 
 export default function Search() {
-  const [cityReceived, setCityReceived] = useState("");
-  const [citySent, setCitySent] = useState("Rome");
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    if (cityReceived.length > 0) {
-      setCitySent(cityReceived);
-    }
-  }
-
-  function setCityName(event) {
-    event.preventDefault();
-    setCityReceived(event.target.value.trim());
-  }
-
   return (
     <div className="Search">
-      <form onSubmit={handleSubmit}>
+      <form>
         <div className="input-group mb-3">
           <input
             type="search"
@@ -29,7 +14,6 @@ export default function Search() {
             autoComplete="off"
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
-            onChange={setCityName}
           />
           <button className="btn btn-primary" type="submit">
             <span className="d-none d-sm-block">Search</span>

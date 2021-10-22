@@ -20,7 +20,7 @@ export default function App() {
             </a>{" "}
             by Mahsa Goudarzi,{" "}
             <a
-              href="https://heuristic-heisenberg-cbb445.netlify.app/"
+              href="https://heuristic-heisenberg-cbb445.netlify.app"
               target="_blank"
               rel="noreferrer"
             >
