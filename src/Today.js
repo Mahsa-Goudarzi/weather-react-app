@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormatDate from "./FormatDate";
 import "./Today.css";
 
 export default function Today(props) {
@@ -8,6 +9,7 @@ export default function Today(props) {
   function handleResponse(response) {
     setTodayData({
       city: response.data.name,
+      date: new Date(response.data.dt * 1000),
       iconSrc: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       temperature: Math.round(response.data.main.temp),
       maxTemp: `${Math.round(response.data.main.temp_max)}°`,
@@ -24,7 +26,9 @@ export default function Today(props) {
       <div className="Today">
         <div className="row">
           <h2>{todayData.city}</h2>
-          <h5>Tuesday 21:21</h5>
+          <h5>
+            <FormatDate date={todayData.date} />
+          </h5>
         </div>
         <div className="row">
           <div className="col-sm-4 col-4">
