@@ -29,7 +29,7 @@ export default function Search() {
           </button>
         </div>
       </form>
-      <Today />
+      <Today defaultCity="New York" />
       <Forecast />
     </div>
   );
