@@ -4,31 +4,29 @@ import Weather from "./Weather";
 export default function App() {
   return (
     <div className="App">
-      <div className="container">
-        <div className="weather-container">
-          <Weather />
-        </div>
-
-        <footer>
-          <small>
-            <a
-              href="https://github.com/Mahsa-Goudarzi/weather-react-app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open-source coded
-            </a>{" "}
-            by Mahsa Goudarzi,{" "}
-            <a
-              href="https://heuristic-heisenberg-cbb445.netlify.app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              hosted on Netlify
-            </a>{" "}
-          </small>
-        </footer>
+      <div className="weather-container">
+        <Weather />
       </div>
+
+      <footer>
+        <small>
+          <a
+            href="https://github.com/Mahsa-Goudarzi/weather-react-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-source coded
+          </a>{" "}
+          by Mahsa Goudarzi,{" "}
+          <a
+            href="https://heuristic-heisenberg-cbb445.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
+          </a>{" "}
+        </small>
+      </footer>
     </div>
   );
 }

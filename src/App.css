@@ -2,14 +2,9 @@
   font-family: sans-serif;
 }
 
-.App .container {
-  width: 735px;
-  max-width: 100%;
-}
-
 .App .weather-container {
   background-color: white;
-  margin: 90px 50px 0 50px;
+  margin: 90px auto 0 auto;
   padding: 40px;
   max-width: 610px;
   box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.1);
@@ -21,7 +16,7 @@
   text-align: center;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 700px) {
   .App .weather-container {
     margin: 55px 10px 0 10px;
   }
