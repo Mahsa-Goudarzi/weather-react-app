@@ -11,7 +11,7 @@ export default function Weather(props) {
     setTodayData({
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
-      iconSrc: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       temperature: Math.round(response.data.main.temp),
       maxTemp: `${Math.round(response.data.main.temp_max)}°`,
       minTemp: `${Math.round(response.data.main.temp_min)}°`,

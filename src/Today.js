@@ -1,5 +1,6 @@
 import React from "react";
 import FormatDate from "./FormatDate";
+import Icon from "./Icon";
 import "./Today.css";
 
 export default function Today(props) {
@@ -13,7 +14,7 @@ export default function Today(props) {
       </div>
       <div className="row">
         <div className="col-sm-4 col-4">
-          <img src={props.data.iconSrc} alt={props.data.description} />
+          <Icon code={props.data.icon} />
         </div>
         <div className="col-sm-4 col-8">
           <div>
