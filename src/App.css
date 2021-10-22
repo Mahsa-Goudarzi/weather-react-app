@@ -6,7 +6,7 @@
   background-color: white;
   margin: 90px auto 0 auto;
   padding: 40px;
-  max-width: 610px;
+  max-width: 580px;
   box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   box-shadow: 0 2px 2px 0 rgb(228, 228, 228);
@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .App .weather-container {
     margin: 55px 10px 0 10px;
   }

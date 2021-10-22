@@ -31,16 +31,18 @@ export default function Today() {
         <h5>Tuesday 21:21</h5>
       </div>
       <div className="row">
-        <div className="col-sm-4 col-5">
+        <div className="col-sm-4 col-4">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
             alt="sunny"
           />
         </div>
-        <div className="col-sm-4 col-7">
+        <div className="col-sm-4 col-8">
           <div>
-            <span className="temperature">16</span> <a href="/">°C</a> |
-            <a href="/">°F</a>
+            <span className="temperature">16</span>{" "}
+            <span className="unit">
+              <a href="/">°C</a> |<a href="/">°F</a>
+            </span>
           </div>
           <small>17° 13°</small>
         </div>
