@@ -9,6 +9,7 @@ export default function Weather(props) {
 
   function handleResponse(response) {
     setTodayData({
+      ready: true,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
@@ -18,7 +19,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
-      ready: true,
+      coordinates: response.data.coord,
     });
   }
 
@@ -58,16 +59,10 @@ export default function Weather(props) {
                 🔎
               </span>
             </button>
-            <button className="btn btn-success" type="button">
-              <span className="d-none d-sm-block">Current</span>
-              <span role="img" className="d-block d-sm-none">
-                📍
-              </span>
-            </button>
           </div>
         </form>
         <Today data={todayData} />
-        <Forecast />
+        <Forecast coordinates={todayData.coordinates} />
       </div>
     );
   } else {

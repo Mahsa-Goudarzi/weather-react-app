@@ -15,7 +15,7 @@ export default function Today(props) {
       </div>
       <div className="row">
         <div className="col-sm-4 col-4">
-          <Icon code={props.data.icon} />
+          <Icon code={props.data.icon} size={60} />
         </div>
         <div className="col-sm-4 col-8">
           <Temperature
