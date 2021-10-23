@@ -9,6 +9,17 @@
   font-weight: 200;
 }
 
+.Today .temperature {
+  font-size: 50px;
+  line-height: 1;
+}
+
+.Today .unit {
+  position: relative;
+  top: -25px;
+  margin-left: 5px;
+}
+
 @media (max-width: 575px) {
   .Today .row {
     text-align: center;

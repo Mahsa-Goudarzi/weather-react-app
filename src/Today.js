@@ -1,7 +1,6 @@
 import React from "react";
 import FormatDate from "./FormatDate";
 import Icon from "./Icon";
-import Temperature from "./Temperature";
 import "./Today.css";
 
 export default function Today(props) {
@@ -18,11 +17,14 @@ export default function Today(props) {
           <Icon code={props.data.icon} size={60} />
         </div>
         <div className="col-sm-4 col-8">
-          <Temperature
-            temperature={props.data.temperature}
-            maxTemp={props.data.maxTemp}
-            minTemp={props.data.minTemp}
-          />
+          <div>
+            <span className="temperature">{props.data.temperature}</span>
+            <span className="unit">°C</span>
+          </div>
+          <small>
+            {props.data.maxTemp}°{" "}
+            <span className="text-muted">{props.data.minTemp}°</span>
+          </small>
         </div>
 
         <div className="col-sm-4 col">
