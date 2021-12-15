@@ -20,6 +20,22 @@
   margin-left: 5px;
 }
 
+.Today .its-a-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 400px) {
+  .Today .its-a-row {
+    display: block;
+    text-align: center;
+  }
+
+  .Today .column {
+    margin: 15px auto;
+  }
+}
+
 @media (max-width: 575px) {
   .Today .row {
     text-align: center;

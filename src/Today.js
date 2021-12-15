@@ -12,11 +12,12 @@ export default function Today(props) {
           <FormatDate date={props.data.date} />
         </h5>
       </div>
-      <div className="row">
-        <div className="col-sm-4 col-4">
+
+      <div className="its-a-row">
+        <div className="column">
           <Icon code={props.data.icon} size={60} />
         </div>
-        <div className="col-sm-4 col-8">
+        <div className="column">
           <div>
             <span className="temperature">{props.data.temperature}</span>
             <span className="unit">°C</span>
@@ -27,7 +28,7 @@ export default function Today(props) {
           </small>
         </div>
 
-        <div className="col-sm-4 col">
+        <div className="column">
           <div className="text-capitalize">{props.data.description}</div>
           <div>Humidity: {props.data.humidity}%</div>
           <div>Wind: {props.data.wind} km/h</div>
