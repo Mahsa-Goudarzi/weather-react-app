@@ -22,10 +22,6 @@ export default function Today(props) {
             <span className="temperature">{props.data.temperature}</span>
             <span className="unit">°C</span>
           </div>
-          <small>
-            {props.data.maxTemp}°{" "}
-            <span className="text-muted">{props.data.minTemp}°</span>
-          </small>
         </div>
 
         <div className="column">
